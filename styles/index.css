@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"); /* container sizes */
+/* transitions */
+:root {
+  /* font sizes */
+  --fs-lg: 20px;
+  --fs-normal: 16px;
+  --fs-sm: 14px;
+  --fs-exsm: 12px;
+  --fs-h1: 55px;
+  --fs-h4: 24px;
+  --fs-h5: 21px;
+  --fs-h6: 18px;
+  --fs-h7: 16px;
+  /* colors */
+  /* color palette */
+  --indigo-400: #6b67aa;
+  --indigo-900: #211c70;
+  --grey-50: #f2f2f2;
+  --grey-300: #c4c4c4;
+  --white: #ffffff;
+  --cyan-300: #6bd4ff;
+  --deep-purple-200: #9d70ff;
+  --deep-purple-300: #8574eb;
+  --linear-gradient: linear-gradient(
+    38.75deg,
+    var(--cyan-300) 14.73%,
+    var(--deep-purple-200) 85.28%
+  );
+}
+
+/*  resets  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.flex-container-center, .flex-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1127.5px;
+  padding: 0 35px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  justify-content: space-between;
+}
+
+.flex-container-center {
+  justify-content: center;
+}
+
+/* typography */
+.h1 {
+  font-weight: 700;
+  font-size: var(--fs-h1);
+}
+
+.h4 {
+  font-weight: 700;
+  font-size: var(--fs-4);
+  line-height: 32px;
+  font-style: normal;
+}
+
+.txt {
+  font-weight: 400;
+  font-size: var(--fs-normal);
+  line-height: 24px;
+  font-style: normal;
+}
+
+.txt-lg {
+  font-weight: 500;
+  font-size: var(--fs-lg);
+  line-height: 30px;
+  font-style: normal;
+}
+
+.txt--indigo-900 {
+  color: var(--indigo-900);
+}
+
+.txt--indigo-400 {
+  color: var(--indigo-400);
+}
+
+.txt--indigo-400 {
+  padding: 20px;
+}
+
+.txt--indigo-44 {
+  padding: 22px;
+}
+
+.txt--indigo-46 {
+  padding: 46px;
+}
+
+/* btn */
+.btn {
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: var(--fs-sm);
+  line-height: 21px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn--md {
+  padding: 10px 55px;
+}
+.btn--lg {
+  padding: 11px 60px;
+}
+
+.btn--border-indig-400 {
+  color: var(--indigo-400);
+  border: 1px solid var(--indigo-400);
+}
+
+.btn--border-indig-400:hover {
+  background-color: var(--indigo-400);
+  color: var(--grey-50);
+}
+
+.btn--gradient {
+  background: var(--linear-gradient);
+  border: 1px solid var(--grey-50);
+  color: var(--grey-50);
+  transition: background 0.3s ease;
+}
+
+.btn--gradient:hover {
+  background: transparent;
+}
+
+/* header */
+.header__nav-top {
+  background-color: var(--indigo-400);
+  padding-top: 15px;
+}
+.header__nav-top-links {
+  flex-wrap: wrap;
+  gap: 43px;
+}
+.header__nav-top-link {
+  font-weight: 500;
+  font-size: var(--fs-normal);
+  line-height: 24px;
+  color: var(--grey-50);
+  padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+.header__nav-top-link:hover {
+  border-bottom-color: var(--grey-50);
+}
+
+/* middle */
+.header__middle {
+  padding: 18px 0 23px;
+  border-bottom: 1px solid var(--indigo-400);
+}
+
+.header__middle-wrap {
+  gap: 43px;
+}
+
+.header__middle-logo-wrap {
+  gap: 18px;
+}
+
+.header__middle-call {
+  gap: 30px;
+}
+
+.header__nav-bottom-links {
+  gap: 83px;
+}
+
+.header__nav-bottom {
+  padding: 27px 0 49px;
+}
+
+.header__nav-bottom-link {
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  line-height: 24px;
+  color: var(--indigo-400);
+  transition: color 0.3s ease;
+}
+
+.header__nav-bottom-link:hover {
+  color: var(--indigo-900);
+}
+
+/* main */
+.main {
+  min-height: calc(100vh - 271px);
+  background-image: url("../assets/images/main-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.main__content {
+  max-width: 398px;
+}
+
+.main__title {
+  padding-bottom: 44px;
+}
+
+.main__txt {
+  padding-bottom: 40px;
+}
+
+.section-wrap {
+  background-color: black;
+  color: wheat;
+  min-height: 100vh;
+}
+
+.section-txt {
+  color: red;
+}
+
+.wrap {
+  display: flex;
+  gap: 40px;
+}
+
+.wrap li:hover .wrap-nested {
+  display: block;
+}
+
+li {
+  position: relative;
+}
+
+.wrap-nested {
+  position: absolute;
+  background-color: blue;
+  padding: 20px;
+}
+
+.wrap-nested li {
+  position: relative;
+}

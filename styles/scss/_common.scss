@@ -1,0 +1,28 @@
+@use "sass:math";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+%flex-extend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: $container-width + math.div($container-space, 2);
+  padding: 0 $container-space;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  @extend %flex-extend;
+  justify-content: space-between;
+}
+
+.flex-container-center {
+  @extend %flex-extend;
+  justify-content: center;
+}
